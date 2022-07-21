@@ -7,7 +7,6 @@ body{
 main {
     display: flex;
     justify-content: center;
-    
 }
 .Top-banner {
     display: flex;
@@ -38,7 +37,7 @@ main {
 #text {
     padding-bottom: 30px;
 }
-#button1 {
+.article a {
     text-decoration: none;
     background-color: red;
     padding: 16px 25px;
@@ -53,11 +52,11 @@ main {
 
 .select {
     background-color: black;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10%;
-    margin-right: 50px;
+    margin-right: 60px;
     margin-left: 25px;
     width: 322px;
     height: 392px;
@@ -96,11 +95,16 @@ main {
     margin-bottom: 5%;
     margin-left: 100px;
 }
+
 .blog {
-    width: 312px;
-    height: 362px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 270px;
+    height: 210px;
+    padding-left: 40px;
+    padding-top: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
 }
 .blog p {
     display: inline;
@@ -118,7 +122,9 @@ footer {
     background-color: black;
     margin: 0%;
     list-style: none;
-    text-align: center;   
+    text-align: center;
+    overflow: hidden;
+    
 }
 footer h1 {
     padding-top: 70px;
@@ -127,9 +133,11 @@ footer h1 {
 .contact {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    padding: 50px;
+    gap: 40px;
     color: #B9B9B9;
 }
+
 /*-----------
   Media Query 
  ------------*/
@@ -180,11 +188,9 @@ footer h1 {
         flex-wrap: wrap;
     }
 }
- 
-/* Mobile Devices */
 
+/* Mobile Devices */
 @media only screen and (max-width: 688px) {
-   
     /* Top Banner  */
     main { 
         width: 100%;
@@ -196,6 +202,7 @@ footer h1 {
         align-items: center;
         width: 350px;
         height: 450px;
+        font-size: 8px;
         text-align: center;
         padding: 0%;
         margin: 0%;
@@ -246,7 +253,8 @@ footer h1 {
         justify-content: center;
     }
     .blog {
-        padding: 0%;
+        margin-top: 100px;
+        
     }
     /* footer */
     footer {
@@ -255,5 +263,7 @@ footer h1 {
     .contact {
         flex-direction: column;
     }
-
+    .contact {
+        padding: 0%;
+    }
 }
